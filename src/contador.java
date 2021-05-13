@@ -55,7 +55,13 @@ public class contador {
     //#region metodos
     
     public int aumentar() {
-        return getInicio() + getIncremento();
+        int resultado = getInicio();
+        resultado = resultado+getIncremento();
+        if(resultado > getFiinal()){
+            return resultado = getInicio();
+        } else{
+            return resultado;
+        }   
     }
 
     //#endregion
