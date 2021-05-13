@@ -22,4 +22,13 @@ public class pruebaContador {
 
             assertEquals(expectedResult, c2.aumentar());
         }
+
+    @Test
+        public void testContadorIncrementandoSuperandoLimite() {
+            contador c2 = new contador(0, 3, 2);
+    
+            int expectedResult = 0;
+
+            assertEquals(expectedResult, c2.aumentar());
+        }
 }
