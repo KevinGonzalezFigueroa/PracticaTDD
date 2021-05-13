@@ -13,4 +13,13 @@ public class pruebaContador {
             contador c2 = new contador(6);
             assertNotNull(c2);
         }
+
+    @Test
+        public void testContadorIncrementando() {
+            contador c2 = new contador(0, 2, 6);
+    
+            int expectedResult = 2;
+
+            assertEquals(expectedResult, c2.aumentar());
+        }
 }
