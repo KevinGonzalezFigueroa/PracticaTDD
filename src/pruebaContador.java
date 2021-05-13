@@ -7,4 +7,10 @@ public class pruebaContador {
             contador c2 = new contador(0, 2, 6);
             assertNotNull(c2);
         }
+
+    @Test
+        public void testCrearContadorUnParametro() {
+            contador c2 = new contador(6);
+            assertNotNull(c2);
+        }
 }
