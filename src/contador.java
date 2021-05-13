@@ -5,6 +5,7 @@ public class contador {
     int fiinal;
     int ValorInicialDefecto = 0;
     int ValorIncrementalDefecto = 1;
+    int resultado;
 
     //#region constructores
 
@@ -48,6 +49,29 @@ public class contador {
         this.fiinal = fiinal;
     }
 
+    public int getValorInicialDefecto() {
+        return ValorInicialDefecto;
+    }
+
+    public void setValorInicialDefecto(int valorInicialDefecto) {
+        ValorInicialDefecto = valorInicialDefecto;
+    }
+
+    public int getValorIncrementalDefecto() {
+        return ValorIncrementalDefecto;
+    }
+
+    public void setValorIncrementalDefecto(int valorIncrementalDefecto) {
+        ValorIncrementalDefecto = valorIncrementalDefecto;
+    }
+
+    public int getResultado() {
+        return resultado;
+    }
+
+    public void setResultado(int resultado) {
+        this.resultado = resultado;
+    }
     
     
     //#endregion getters and setters
@@ -55,13 +79,18 @@ public class contador {
     //#region metodos
     
     public int aumentar() {
-        int resultado = getInicio();
+        resultado = getInicio();
         resultado = resultado+getIncremento();
         if(resultado > getFiinal()){
             return resultado = getInicio();
         } else{
             return resultado;
         }   
+    }
+
+    public int resetear() {
+        resultado = getInicio();
+        return resultado;
     }
 
     //#endregion
