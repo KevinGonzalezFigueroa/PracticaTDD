@@ -40,4 +40,14 @@ public class pruebaContador {
 
             assertEquals(expectedResult, c2.resetear());
         }
+
+    
+    @Test
+        public void testConocerValor() {
+            contador c2 = new contador(0, 1, 2);
+    
+            int expectedResult = 0;
+
+            assertEquals(expectedResult, c2.valor());
+        }
 }
