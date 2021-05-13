@@ -93,5 +93,9 @@ public class contador {
         return resultado;
     }
 
+    public int valor() {
+        return resultado;
+    }
+
     //#endregion
 }
