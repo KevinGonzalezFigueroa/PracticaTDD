@@ -3,12 +3,21 @@ public class contador {
     int inicio;
     int incremento;
     int fiinal;
+    int ValorInicialDefecto = 0;
+    int ValorIncrementalDefecto = 1;
 
     public contador(int inicio, int incremento, int fiinal) {
         this.inicio = inicio;
         this.incremento = incremento;
         this.fiinal = fiinal;
     }
+
+    public contador(int fiinal) {
+        this.inicio = ValorInicialDefecto;
+        this.incremento = ValorIncrementalDefecto;
+        this.fiinal = fiinal;
+    }
+
 
     //#region getters and setters
 
